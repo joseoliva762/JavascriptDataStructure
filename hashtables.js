@@ -39,10 +39,12 @@ class HashTable {
 const myHashTable = new HashTable(50);
 console.log(myHashTable);
 console.log('1', myHashTable.set("Jose", "Oliva"));
-console.log('2', myHashTable.set("Jose", "Angela"));
 console.log('3', myHashTable.set("Jose", "Ana"));
+console.log('2', myHashTable.set("Jose", "Angela"));
 console.log('4', myHashTable.set("Andres", "Yeraldin"));
 console.log('5', myHashTable.set("Diego", "Mariana"));
 console.log('6', myHashTable.set("Mariana", "Diego"));
-console.log('7', myHashTable.get("Jose"));
-console.log('8', myHashTable.get("Mariana"));
+console.log('7', myHashTable.get("Mariana"));
+console.log('8', myHashTable.set("Mariana", "Ramiro"));
+console.log('9', myHashTable.get("Mariana"));
+console.log('10', myHashTable.get("Jose"));
