@@ -5,4 +5,6 @@ In this repository you will find some examples about the implementation of data 
 - Array.
 - Hast Table.
 - Linked List.
-- More...
+    - Simply Linked List.
+    - Doubly Linked List.
+- More, coming soon...
