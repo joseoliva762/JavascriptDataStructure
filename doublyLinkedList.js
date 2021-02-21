@@ -83,15 +83,23 @@ class MySinglyLinkedList {
         --this.length;
         return deletedNode;
     }
+    forEach(callback) {
+        let view = this.head;
+        let index = 0;
+        while(view.next) {
+            callback(view.value, index++, this.head, this.length);
+            view = view.next;
+        }
+    }
 }
 
 
 let list = new MySinglyLinkedList(12);
 console.log('Init', list);
-// list.append(10);
-// list.append(1997);
-// list.append(14);
-// list.append(3);
+list.append(10);
+list.append(1997);
+list.append(14);
+list.append(3);
 // list.append(1999);
 // console.log('Append', list);
 // list.prepend(314);
@@ -107,3 +115,7 @@ console.log('Init', list);
 // console.log("Delete", list);
 // console.log(list.delete(list.length + 1));
 // console.log("Delete", list);
+list.forEach((element, index) => {
+    element = element * 2;
+    console.log(`Element ${index + 1}:`, element);
+});
