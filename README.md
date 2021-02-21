@@ -8,4 +8,5 @@ In this repository you will find some examples about the implementation of data 
     - Simply Linked List.
     - Doubly Linked List.
 - Stack.
+- Queue.
 - More, coming soon...

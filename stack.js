@@ -12,6 +12,7 @@ class Stack {
         this.length = 0;
         if (value) this.push(value);
     }
+
     peek() { return this.top; }
 
     push(value) {
@@ -26,6 +27,7 @@ class Stack {
         ++this.length;
         return this;
     }
+    
     pop() {
         const deletedTop = this.peek();
         if (!deletedTop) return;
@@ -42,6 +44,7 @@ stack.push(5);
 stack.push(15);
 stack.push(25);
 console.log(stack);
+console.log(stack.peek());
 console.log(stack.pop());
 console.log(stack.pop());
 console.log(stack.pop());
