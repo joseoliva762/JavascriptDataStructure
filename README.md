@@ -7,4 +7,5 @@ In this repository you will find some examples about the implementation of data 
 - Linked List.
     - Simply Linked List.
     - Doubly Linked List.
+- Stack.
 - More, coming soon...
